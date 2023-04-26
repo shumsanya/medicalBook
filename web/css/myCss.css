@@ -1,0 +1,104 @@
+.visit-form {
+    padding: 18px;
+}
+
+.for-button-visit {
+    padding-top: 27px;
+}
+
+.modal-form-card {
+    background: #a2b7b3;border:0;position:relative;width:100%;margin-bottom:30px;box-shadow:0 1px 20px 0 rgba(0,0,0,.1)
+}
+
+.title-modal {
+    font-family: "Felix Titling";
+    font-size: 20px;
+}
+
+.pulsse {
+    animation: pullse 3s infinite;
+}
+
+.pulsse:hover {
+    animation: none;
+}
+
+@keyframes pullse {
+    0% {box-shadow: 0 0 0 0 rgba(204,169,44, 0.5);}
+    40% {box-shadow: 0 0 0 20px rgba(204,169,44, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(204,169,44, 0);}
+}
+
+.input_avatar {
+    cursor: pointer;
+    width: 300px;
+    height: 335px;
+    top: -300px;
+}
+
+div.required label.control-label:before {
+    content: "*";
+    color: red;
+}
+
+/* стиль для autocomplete */
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    _width: 160px;
+    padding: 4px 0;
+    margin: 2px 0 0 0;
+    list-style: none;
+    background-color: grey;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+.ui-autocomplete .ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+}
+.ui-autocomplete .ui-menu-item > a.ui-corner-all.ui-state-hover, .ui-autocomplete .ui-menu-item > a.ui-corner-all.ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+/* формирование абзацев */
+p {
+    margin: 0;
+    text-indent: 3ch;
+}
+
+p.pilcrow {
+    text-indent: 0;
+    display: inline;
+}
+p.pilcrow + p.pilcrow::before {
+    content: " ¶ ";
+}
